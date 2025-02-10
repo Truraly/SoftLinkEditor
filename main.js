@@ -7,10 +7,10 @@ const { paternitySearch } = require("./paternitySearch.js");
 const { linkUpdata } = require("./linkUpdata.js");
 // 原始文件路径
 const OriginPaths = [
-  "/data/Desktop/Projects/",
-  "/data/Desktop/Areas/",
-  "/data/Desktop/Resources/",
-  "/data/Desktop/Archives/",
+  "/home/truraly/TPARA/Project/",
+  "/home/truraly/TPARA/Area/",
+  "/home/truraly/TPARA/Resource/",
+  "/home/truraly/TPARA/Archive/",
 ];
 
 logger.info("SoftLinkEditor started.");

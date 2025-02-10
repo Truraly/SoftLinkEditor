@@ -23,10 +23,10 @@ const { logger, sendNotification } = require("./logger.js");
 
 // 默认路径
 const defaultPath = {
-  Area: "/data/Desktop/Areas",
-  Project: "/data/Desktop/Projects",
-  Resource: "/data/Desktop/Resources",
-  Task: "/data/Desktop/Tasks",
+  Area: "/home/truraly/TPARA/Area",
+  Project: "/home/truraly/TPARA/Project",
+  Resource: "/home/truraly/TPARA/Resource",
+  Task: "/home/truraly/TPARA/Task",
 };
 
 // 更新软链接函数
@@ -71,7 +71,8 @@ function linkUpdata(dirObjects) {
         } else {
           try {
             node_fs.symlinkSync(filePath, softLink);
-            logger.log("软链接创建:", softLink);
+
+            logger.debug("软链接创建:", softLink);
             createLinkCount++;
           } catch (error) {
             logger.warn("软链接创建失败,child:", child);
